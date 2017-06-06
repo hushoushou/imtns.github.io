@@ -5,11 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="http://mall-res.manboker.com/lib/jquery.min.js"></script>
+    <title>HTML tag</title>
+    <style>
+        .main {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .box div {
+            width: 500px;
+            height: 600px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .box:nth-child(1) div {
+            background-color: red;
+        }
+
+        .box:nth-child(2) div {
+            background-color: blue;
+        }
+
+        .box:nth-child(3) div {
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
-    <h5>老师，加班太忙，没空做~回头补，不好意思~~！~！ </h5>
+    <div class="main">
+        <ul>
+            <li>
+                <a href="#div1">div1</a>
+            </li>
+            <li>
+                <a href="#div2">div2</a>
+            </li>
+            <li>
+                <a href="#div3">div3</a>
+            </li>
+        </ul>
+        <div class="content">
+            <a id="div1" class="box">
+                <div></div>
+            </a>
+            <a id="div2" class="box">
+                <div></div>
+            </a>
+            <a id="div3" class="box">
+                <div></div>
+            </a>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', 'a', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>
