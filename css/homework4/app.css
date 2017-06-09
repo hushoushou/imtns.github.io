@@ -15,7 +15,6 @@ img {
 }
 
 .container {
-    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -70,6 +69,7 @@ footer {
     height: 133px;
     display: block;
     color: white;
+    left:0;
 }
 
 footer p {
@@ -105,9 +105,9 @@ footer .btns a {
     padding: 9px 20px;
     border-radius: 3px;
     display: inline-block;
-    font-size:14px;
+    font-size: 14px;
     border: 0;
-    margin-right:4px;
+    margin-right: 4px;
 }
 
 footer .btns a:nth-child(1) {
@@ -119,4 +119,16 @@ footer .btns a:nth-child(2) {
     background-color: #fff;
     color: #56bc8a;
     border-color: rgba(0, 0, 0, .2);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
 }
