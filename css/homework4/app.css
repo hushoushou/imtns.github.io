@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    position: relative;
+    background-color: rgb(54, 70, 93);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .logo {
+    width: 45%;
+    position: relative;
+    margin: 140px auto 40px;
+}
+
+.container .login-item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .login-item div {
+    width: 100%;
+}
+
+.container .login-item .form-field {
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 11px 10px 11px 13px;
+    display: block;
+    border: none;
+    margin: 0;
+    outline: none;
+    min-height: 42px;
+}
+
+.form-field input[type='submit'] {
+    background-color: rgb(82, 158, 204);
+    color: white;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+    color: #a0a4b9;
+    font-size: 16px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #56bc8a;
+    height: 133px;
+    display: block;
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer p:nth-child(1) {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer p:nth-child(1) span {
+    font-size: 21px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 8px;
+    color: #aaddc4;
+    font-size: 17px;
+}
+
+footer .btns {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .btns a {
+    position: relative;
+    padding: 9px 20px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size:14px;
+    border: 0;
+    margin-right:4px;
+}
+
+footer .btns a:nth-child(1) {
+    background-color: #36465d;
+    color: #56bc8a;
+}
+
+footer .btns a:nth-child(2) {
+    background-color: #fff;
+    color: #56bc8a;
+    border-color: rgba(0, 0, 0, .2);
+}
