@@ -50,10 +50,16 @@ input {
     min-height: 42px;
 }
 
-.form-field input[type='submit'] {
+.submit input {
     background-color: rgb(82, 158, 204);
     color: white;
     font-size: 18px;
+}
+
+.submit input:hover {
+    background-color: rgb(82, 148, 214);
+    color:whitesmoke;
+    cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
@@ -69,7 +75,7 @@ footer {
     height: 133px;
     display: block;
     color: white;
-    left:0;
+    left: 0;
 }
 
 footer p {
@@ -108,19 +114,26 @@ footer .btns a {
     font-size: 14px;
     border: 0;
     margin-right: 4px;
+    transition: all .6s;
+    cursor: pointer;
 }
 
 footer .btns a:nth-child(1) {
     background-color: #36465d;
     color: #56bc8a;
 }
-
+footer .btns a:nth-child(1):hover{
+    background-color: #273243;
+    color:white;
+}
 footer .btns a:nth-child(2) {
     background-color: #fff;
     color: #56bc8a;
     border-color: rgba(0, 0, 0, .2);
 }
-
+footer .btns a:nth-child(2):hover{
+     background-color: #e3e3e3;
+}
 @media (min-width: 1024px) {
     .container {
         width: 500px;
